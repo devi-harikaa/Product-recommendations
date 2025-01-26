@@ -4,6 +4,9 @@ Created on Thu Dec 15 16:20:47 2022
 
 @author: krish
 """
+pip uninstall yellowbrick
+
+pip install git+https://github.com/<fork-repo>/yellowbrick.git
 
 # %% Libraries
 import streamlit as st
