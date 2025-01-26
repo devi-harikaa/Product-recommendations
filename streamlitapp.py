@@ -23,6 +23,12 @@ import plotly.graph_objects as go
 # Other viz
 import seaborn as sns
 import matplotlib.pyplot as plt
+try:
+    from st_aggrid import AgGrid
+except ImportError:
+    import os
+    os.system("pip install streamlit-aggrid")
+    from st_aggrid import AgGrid
 
 # Runtime Configuration Parameters for Matplotlib
 plt.rcParams['font.family'] = 'Verdana'
